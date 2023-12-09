@@ -1,0 +1,149 @@
+.page {
+  display: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.active {
+  display: block;
+}
+body {
+  background: #222;
+  color: #fffae7;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.container {
+  background-color: #fffae7;
+  text-align: center;
+  border-radius: 10px;
+  border: px solid #00ffff;
+  width: 300px;
+  padding: 20px;
+  transition: border-color 0.5s ease-in-out;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+a {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.auto-typed,
+.auto-typed1 {
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  animation: changeColor 10s infinite;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes changeColor {
+  0% {
+    color: #d4ac0d;
+  }
+  50% {
+    color: #d68910;
+  }
+  100% {
+    color: #ca6f1e;
+  }
+}
+
+.btn,
+.profile-img {
+  margin-top: 20px;
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  background-color: #7e1515;
+  color: #fffae7;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  /* border: 4px solid #00ffff; */
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  animation: changeBgColor 5s infinite;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #490d0d;
+  color: #fffae7;
+}
+
+.profile-img {
+  border: 2px solid #7e1515;
+  border-radius: 50%;
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.card {
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.stk {
+  border: 0px solid black;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 5px;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.card h1,
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  color: #333;
+  margin-bottom: auto;
+  line-height: 1.4;
+  text-align: center;
+}
+
+footer {
+  background-color: #222;
+  color: #fffae7;
+  padding: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
